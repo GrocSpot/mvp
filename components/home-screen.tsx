@@ -9,6 +9,8 @@ import { Input } from "@/components/ui/input"
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import type { Screen, ShoppingItem } from "../app/page"
+import Image from "next/image";
+import Logo from "../public/grocspot-logo.jpeg";
 
 interface Store {
   id: string
@@ -84,7 +86,8 @@ export default function HomeScreen({ onNavigate, onStoreSelect, onItemsUpdate }:
       <div className="bg-white px-4 py-6 shadow-sm">
         <div className="flex items-center space-x-3 mb-4">
           <div className="w-10 h-10 bg-gradient-to-r from-green-500 to-green-600 rounded-xl flex items-center justify-center shadow-md">
-            <span className="text-white font-bold text-lg">G</span>
+            {/* <span className="text-white font-bold text-lg">G</span> */}
+            <Image src={Logo} alt="GrocSpot Logo" className="rounded-xl" width={40} height={40} />
           </div>
           <div>
             <h1 className="text-xl font-bold text-gray-900">GrocSpot</h1>

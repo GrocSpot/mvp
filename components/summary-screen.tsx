@@ -181,9 +181,6 @@ export default function SummaryScreen({ shoppingItems, selectedStore, onNavigate
             Back to Home
           </Button>
         </div>
-        <Button variant="ghost" className="w-full text-sm text-gray-600">
-          Explore Other Stores
-        </Button>
       </div>
     </div>
   )
