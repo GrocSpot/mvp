@@ -18,6 +18,7 @@ export default function StoreMapLayout() {
           className="transition-transform duration-200 origin-center"
           style={{ transform: `scale(${zoom})` }}
         >
+            {/* simple  */}
           <svg
             viewBox="0 0 1200 900"
             width="500"
