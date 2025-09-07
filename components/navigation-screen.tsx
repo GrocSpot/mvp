@@ -8,6 +8,7 @@ import { Card } from "@/components/ui/card"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Switch } from "@/components/ui/switch"
 import type { Screen, ShoppingItem } from "../app/page"
+import StoreMap from './store-map';
 
 interface NavigationScreenProps {
   selectedStore: string
@@ -69,7 +70,8 @@ export default function NavigationScreen({
         </div>
       </div>
        <div className="bg-white border-t border-gray-200 rounded-xl shadow-lg h-[98%] m-2 flex flex-col items-center justify-center">
-  Map will be displayed here shortly.
+  {/* Map will be displayed here shortly. */}
+  <StoreMap/>
  </div>
       {/* Bottom Sheet - Shopping List */}
       <div className="bg-white border-t border-gray-200 rounded-t-xl shadow-lg ">

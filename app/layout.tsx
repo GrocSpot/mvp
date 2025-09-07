@@ -2,6 +2,9 @@ import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 import './globals.css'
+// in your _app.tsx or layout.tsx (Next.js 13+ app directory)
+import "leaflet/dist/leaflet.css";
+
 
 export const metadata: Metadata = {
   title: 'GrocSpot',
@@ -23,7 +26,8 @@ html {
   --font-sans: ${GeistSans.variable};
   --font-mono: ${GeistMono.variable};
 }
-        `}</style>
+        `}
+</style>
       </head>
       <body>{children}</body>
     </html>
